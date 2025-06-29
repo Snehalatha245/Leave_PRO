@@ -1,0 +1,1079 @@
+[
+  {
+    "ContainingType": "LeaveManagement.Controllers.AttendanceController",
+    "Method": "GetAttendanceByEmployeeIdAndDateRange",
+    "RelativePath": "api/Attendance/AttendanceInDateRangeByEmployeeId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.AttendanceController",
+    "Method": "GetAttendanceByManagerIdAndDateRange",
+    "RelativePath": "api/Attendance/AttendanceInDateRangeByManager",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.AttendanceController",
+    "Method": "PostClockIn",
+    "RelativePath": "api/Attendance/ClockIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.AttendanceController",
+    "Method": "PostClockOut",
+    "RelativePath": "api/Attendance/ClockOut",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.AttendanceController",
+    "Method": "GetEmpAttendance",
+    "RelativePath": "api/Attendance/EmployeeWeekAttendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.AttendenceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "AbsentEmployeeList",
+    "RelativePath": "api/Employee/AbsentEmployees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "GetEmployeeByManagerId",
+    "RelativePath": "api/Employee/AllEmployeesByManagerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "GetCurrentDayEmployeeByManagerId",
+    "RelativePath": "api/Employee/CurrentDayEmployeeByManagerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "GetEmployeeByEmpId",
+    "RelativePath": "api/Employee/EmployeeProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.EmployeeListResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "GetRole",
+    "RelativePath": "api/Employee/getRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "EmployeeLogin",
+    "RelativePath": "api/Employee/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "LeaveManagement.Application.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Domain.Models.Employee, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Domain.Models.Employee, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.EmployeeController",
+    "Method": "Logout",
+    "RelativePath": "api/Employee/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Domain.Models.Employee, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[LeaveManagement.Domain.Models.Employee, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.HolidayCalendarController",
+    "Method": "GetAnnualHolidaysList",
+    "RelativePath": "api/HolidayCalendar/AnnualHoildays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.HolidayCalendarResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.HolidayCalendarResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.HolidayCalendarController",
+    "Method": "GetUpcomingHolidaysList",
+    "RelativePath": "api/HolidayCalendar/UpcomingHoildays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.HolidayCalendarResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.HolidayCalendarResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveBalanceController",
+    "Method": "GetEmpAttendance",
+    "RelativePath": "api/LeaveBalance/ByEmployeeId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveBalanceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveBalanceResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "PostLeaveRequest",
+    "RelativePath": "api/LeaveRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveRequest",
+        "Type": "LeaveManagement.Application.DTOs.PostLeaveRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "UpdateleaveRequest",
+    "RelativePath": "api/LeaveRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "leaveRequest",
+        "Type": "LeaveManagement.Application.DTOs.UpdateLeaveRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "ApproveLeave",
+    "RelativePath": "api/LeaveRequest/ApproveLeave",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LeaveId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "CancelLeaveRequest",
+    "RelativePath": "api/LeaveRequest/CancelLeaveRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LeaveRequestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "GetEmployeeByEmpId",
+    "RelativePath": "api/LeaveRequest/EmployeeStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveRequestStatusResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveRequestStatusResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "GetEmployeeByManagerId",
+    "RelativePath": "api/LeaveRequest/PendingRequestsByManager",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveRequestStatusResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.LeaveRequestStatusResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.LeaveRequestController",
+    "Method": "RejectLeave",
+    "RelativePath": "api/LeaveRequest/RejectLeave",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LeaveId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ReportController",
+    "Method": "GetEmployeeReport",
+    "RelativePath": "api/Report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ReportResponseDto, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ReportResponseDto, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftsController",
+    "Method": "GetEmployeeByManagerId",
+    "RelativePath": "api/Shifts/AllEmployeesByManagerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftsResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftsResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftsController",
+    "Method": "PostShiftToEmployeeByManagerId",
+    "RelativePath": "api/Shifts/AssignShifts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shift",
+        "Type": "LeaveManagement.Application.DTOs.AssignShiftsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftsController",
+    "Method": "UpdateShiftToEmployeeByManagerId",
+    "RelativePath": "api/Shifts/AssignShifts",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shift",
+        "Type": "LeaveManagement.Application.DTOs.UpdateShiftAssignDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftsController",
+    "Method": "GetEmployeeByEmpId",
+    "RelativePath": "api/Shifts/ByEmployeeId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftsResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftsResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "ApproveShiftSwapRequest",
+    "RelativePath": "api/ShiftSwapRequest/ApproveShiftRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ShiftSwapRequestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "UpdateShiftSwapRequest",
+    "RelativePath": "api/ShiftSwapRequest/ByEmployeeId",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ShiftSwapRequestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "shiftSwapRequest",
+        "Type": "LeaveManagement.Application.DTOs.UpdateSwapShiftDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "PostShiftSwapRequest",
+    "RelativePath": "api/ShiftSwapRequest/ByEmployeeId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shiftSwapRequest",
+        "Type": "LeaveManagement.Application.DTOs.PostShiftSwapRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "CancelShiftSwapRequest",
+    "RelativePath": "api/ShiftSwapRequest/CancelRequestByEmployeeId",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ShiftSwapRequestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "getEmployeeShiftSwapStatus",
+    "RelativePath": "api/ShiftSwapRequest/EmployeeStatusByEmployeeId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftSwapRequestResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftSwapRequestResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "RejectShiftSwapRequest",
+    "RelativePath": "api/ShiftSwapRequest/RejectShiftRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ShiftSwapRequestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LeaveManagement.Controllers.ShiftSwapRequestController",
+    "Method": "getEmployeesRequests",
+    "RelativePath": "api/ShiftSwapRequest/RequestsByManagerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftSwapRequestResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "LeaveManagement.shared.OperationResult.OperationResult\u00601[[System.Collections.Generic.ICollection\u00601[[LeaveManagement.Application.DTOs.ShiftSwapRequestResponseDTO, LeaveManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  }
+]

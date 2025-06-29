@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LeaveManagement</name>
+    </assembly>
+    <members>
+        <member name="M:LeaveManagement.Controllers.AttendanceController.GetEmpAttendance">
+            <summary>
+            Retrieves the weekly attendance of an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the attendance details.
+            Returns 200 OK with the attendance details if successful, or 404 Not Found if no attendance records are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the attendance details if successful, or 404 Not Found if no attendance records are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.AttendanceController.PostClockIn">
+            <summary>
+            Clocks in an employee.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> indicating the result of the clock-in operation.
+            Returns 200 OK if the clock-in is successful, or 400 Bad Request if the operation fails.
+            </returns>
+            <remarks>
+            This method allows an employee to clock in. It returns 200 OK if the clock-in is successful, or 400 Bad Request if the operation fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.AttendanceController.PostClockOut">
+            <summary>
+            Clocks out an employee.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> indicating the result of the clock-out operation.
+            Returns 200 OK if the clock-out is successful, or 400 Bad Request if the operation fails.
+            </returns>
+            <remarks>
+            This method allows an employee to clock out. It returns 200 OK if the clock-out is successful, or 400 Bad Request if the operation fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.AttendanceController.GetAttendanceByManagerIdAndDateRange(System.DateOnly,System.DateOnly)">
+            <summary>
+            Retrieves the attendance records of employees within a specified date range for a manager.
+            </summary>
+            <param name="startDate">The start date of the date range.</param>
+            <param name="endDate">The end date of the date range.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the attendance details.
+            Returns 200 OK with the attendance details if successful, or 400 Bad Request if no attendance records are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the attendance details if successful, or 400 Bad Request if no attendance records are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.AttendanceController.GetAttendanceByEmployeeIdAndDateRange(System.DateOnly,System.DateOnly)">
+            <summary>
+            Retrieves the attendance records of employees within a specified date range for a employee.
+            </summary>
+            <param name="startDate">The start date of the date range.</param>
+            <param name="endDate">The end date of the date range.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the attendance details.
+            Returns 200 OK with the attendance details if successful, or 400 Bad Request if no attendance records are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the attendance details if successful, or 400 Bad Request if no attendance records are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.GetEmployeeByManagerId">
+            <summary>
+            Retrieves all employees managed by a specific manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the employee data.
+            Returns 200 OK with the employee data if successful, or 404 Not Found if no employees are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the employee data if successful, or 404 Not Found if no employees are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.GetEmployeeByEmpId">
+            <summary>
+            Retrieves the profile of an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the employee profile.
+            Returns 200 OK with the profile if successful, or 404 Not Found if the profile is not found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the profile if successful, or 404 Not Found if the profile is not found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.EmployeeLogin(LeaveManagement.Application.DTOs.LoginDTO)">
+            <summary>
+            Authenticates an employee or manager using their email and password, and logs them into the portal.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the authentication result.
+            Returns 200 OK with a token if successful, or 400 Bad Request if the login fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with a token if successful, or 400 Bad Request if the login fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.GetCurrentDayEmployeeByManagerId">
+            <summary>
+            Retrieves the employees managed by a specific manager who are present on the current day.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the employee data.
+            Returns 200 OK with the employee data if successful, or 404 Not Found if no employees are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the employee data if successful, or 404 Not Found if no employees are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.Logout">
+            <summary>
+            Logs out the currently authenticated user from the portal, invalidating their session or token.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> indicating the outcome of the logout operation.
+            Returns 200 OK if the logout is successful, or an appropriate error status (e.g., 400 Bad Request, 401 Unauthorized)
+            if the logout fails due to an invalid request or no active session.
+            </returns>
+            <remarks>
+            This method invalidates the user's authentication token or session, effectively logging them out.
+            It typically returns 200 OK upon successful invalidation.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.AbsentEmployeeList">
+            <summary>
+            Retrieves a list of employees who are absent on the current date, filtered by manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing an <see cref="T:LeaveManagement.shared.OperationResult.OperationResult`1"/> of a collection of <see cref="T:LeaveManagement.Domain.Models.Employee"/> objects.
+            Returns 200 OK with the list of absent employees if successful.
+            Returns 404 Not Found if the retrieval fails (e.g., no employees found or an internal service error).
+            </returns>
+            <remarks>
+            This endpoint requires the user to have the 'Manager' role.
+            It queries the database for employees who are not marked as present for the current day.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.EmployeeController.GetRole">
+            <summary>
+            Retrieves the role information for the current user or system.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing an <see cref="T:LeaveManagement.shared.OperationResult.OperationResult`1"/> of the role data.
+            Returns 200 OK with the role information if successful.
+            Returns 400 Bad Request if the retrieval fails (e.g., service error, no role found).
+            </returns>
+            <remarks>
+            This endpoint requires the user to have one of the following roles:
+            'MaintenanceEngineer', 'Developer', 'NetworkEngineer', 'DevOpsEngineer',
+            'DatabaseAdministrator', 'Tester', or 'Manager'.
+            It delegates the retrieval of role information to the employee service.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.HolidayCalendarController.GetAnnualHolidaysList">
+            <summary>
+            Retrieves the list of annual holidays.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the holiday data.
+            Returns 200 OK with the holiday data if successful, or 404 Not Found if no holidays are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the holiday data if successful, or 404 Not Found if no holidays are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.HolidayCalendarController.GetUpcomingHolidaysList">
+            <summary>
+            Retrieves the list of the next five upcoming holidays.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the holiday data.
+            Returns 200 OK with the holiday data if successful, or 404 Not Found if no holidays are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the holiday data if successful, or 404 Not Found if no holidays are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveBalanceController.GetEmpAttendance">
+            <summary>
+            Retrieves the leave balance of an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the leave balance data.
+            Returns 200 OK with the leave balance if successful, or 404 Not Found if no leave balance is found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the leave balance if successful, or 404 Not Found if no leave balance is found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.GetEmployeeByEmpId">
+            <summary>
+            Retrieves the leave request status of an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the leave request status.
+            Returns 200 OK with the status if successful, or 404 Not Found if no status is found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the leave request status if successful, or 404 Not Found if no status is found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.GetEmployeeByManagerId">
+            <summary>
+            Retrieves the pending leave requests of employees managed by a specific manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the leave request data.
+            Returns 200 OK with the leave request data if successful, or 404 Not Found if no requests are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the leave request data if successful, or 404 Not Found if no requests are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.ApproveLeave(System.Guid)">
+            <summary>
+            Approves a leave request by its ID, approved by the manager who manages the employee.    
+            </summary>
+            <param name="LeaveId">The ID of the leave request to approve.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the approval operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the approval fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the approval fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.RejectLeave(System.Guid)">
+            <summary>
+            Rejects a leave request by its ID, rejected by the manager who manages the employee.
+            </summary>
+            <param name="LeaveId">The ID of the leave request to reject.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the rejection operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the rejection fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the rejection fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.CancelLeaveRequest(System.Guid)">
+            <summary>
+            Cancels a leave request by the employee, only if the status is pending.
+            </summary>
+            <param name="LeaveRequestId">The ID of the leave request to cancel.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the cancellation operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the cancellation fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the cancellation fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.PostLeaveRequest(LeaveManagement.Application.DTOs.PostLeaveRequestDTO)">
+            <summary>
+            Submits a leave request by the employee.
+            </summary>
+            <param name="leaveRequest">The leave request details.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the submission operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the submission fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the submission fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.LeaveRequestController.UpdateleaveRequest(System.Guid,LeaveManagement.Application.DTOs.UpdateLeaveRequestDTO)">
+            <summary>
+            Updates leave request details by the employee, only if the status is pending.
+            </summary>
+            <param name="leaveId">The ID of the leave request to update, provided in the query string.</param>
+            <param name="leaveRequest">The updated leave request details provided in the request body.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the update operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ReportController.GetEmployeeReport">
+            <summary>
+            Retrieves the employees report for the current manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the employee report details.
+            Returns 200 OK with the report details if successful, or 404 Not Found if no report is found.
+            </returns>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftsController.GetEmployeeByEmpId">
+            <summary>
+            Retrieves all shifts for an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the retrieval operation.
+            Returns 200 OK with the result if successful, or 404 Not Found if the employee or shifts are not found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 404 Not Found if the employee or shifts are not found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftsController.GetEmployeeByManagerId">
+            <summary>
+            Retrieves all shifts for employees managed by a specific manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the retrieval operation.
+            Returns 200 OK with the result if successful, or 404 Not Found if no employees or shifts are found.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 404 Not Found if no employees or shifts are found.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftsController.PostShiftToEmployeeByManagerId(LeaveManagement.Application.DTOs.AssignShiftsDTO)">
+            <summary>
+            Assigns shifts to an employee by the manager.
+            </summary>
+            <param name="shift">The shift details provided in the request body.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the assignment operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the assignment fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the assignment fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftsController.UpdateShiftToEmployeeByManagerId(LeaveManagement.Application.DTOs.UpdateShiftAssignDTO)">
+            <summary>
+            Updates the assigned shifts for an employee by the manager.
+            </summary>
+            <param name="shift">The updated shift details provided in the request body.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the update operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.getEmployeeShiftSwapStatus">
+            <summary>
+            Retrieves the shift swap status for an employee by their ID.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the retrieval operation.
+            Returns 200 OK with the result if successful, or 404 Not Found if the retrieval fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 404 Not Found if the retrieval fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.getEmployeesRequests">
+            <summary>
+            Retrieves all shift swap requests for employees managed by a specific manager.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the retrieval operation.
+            Returns 200 OK with the result if successful, or 404 Not Found if the retrieval fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 404 Not Found if the retrieval fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.ApproveShiftSwapRequest(System.Guid)">
+            <summary>
+            Approves a shift swap request by it's ID, approved by the manager who manages the employee.
+            </summary>
+            <param name="ShiftSwapRequestId">The ID of the shift swap request to approve, provided in the query string.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the approval operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the approval fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the approval fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.RejectShiftSwapRequest(System.Guid)">
+            <summary>
+            Rejects a shift swap request by it's ID, rejected by the manager who manages the employee.
+            </summary>
+            <param name="ShiftSwapRequestId">The ID of the shift swap request to reject, provided in the query string.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the rejection operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the rejection fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the rejection fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.CancelShiftSwapRequest(System.Guid)">
+            <summary>
+            Cancels a shift swap request by the employee, only if the status is pending.
+            </summary>
+            <param name="ShiftSwapRequestId">The ID of the shift swap request to cancel, provided in the query string.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the cancellation operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the cancellation fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the cancellation fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.UpdateShiftSwapRequest(System.Guid,LeaveManagement.Application.DTOs.UpdateSwapShiftDTO)">
+            <summary>
+            Updates a shift swap request details by the employee, only if the status is pending.
+            </summary>
+            <param name="ShiftSwapRequestId">The ID of the shift swap request to update, provided in the query string.</param>
+            <param name="shiftSwapRequest">The updated shift swap request details provided in the request body.</param>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> containing the result of the update operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the update fails.
+            </remarks>
+        </member>
+        <member name="M:LeaveManagement.Controllers.ShiftSwapRequestController.PostShiftSwapRequest(LeaveManagement.Application.DTOs.PostShiftSwapRequestDTO)">
+            <summary>
+            Submits a shift swap request by an employee.
+            </summary>
+            <returns>
+            An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the result of the creation operation.
+            Returns 200 OK with the result if successful, or 400 Bad Request if the creation fails.
+            </returns>
+            <remarks>
+            This method returns 200 OK with the result if successful, or 400 Bad Request if the creation fails.
+            </remarks>
+        </member>
+        <member name="T:LeaveManagement.Migrations.First">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.First.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.First.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.First.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:LeaveManagement.Migrations.Second">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Second.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Second.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Second.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:LeaveManagement.Migrations.Third">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Third.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Third.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LeaveManagement.Migrations.Third.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
